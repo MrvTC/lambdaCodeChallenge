@@ -36,5 +36,6 @@ public class C3_Array_StreamOrnekleri {
 
     public static void ortalama (int [] arr){
         Arrays.stream(arr).average().ifPresent(System.out::println);
+
     }
 }
