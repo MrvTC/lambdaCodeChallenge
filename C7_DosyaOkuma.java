@@ -1,4 +1,4 @@
-package LambdaCodeChallenge;
+package Lambda_CodeChallenge;
 
 import java.io.IOException;
 import java.nio.file.Files;

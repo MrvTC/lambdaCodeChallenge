@@ -1,4 +1,4 @@
-package LambdaCodeChallenge;
+package Lambda_CodeChallenge;
 
 
 import java.util.OptionalDouble;
