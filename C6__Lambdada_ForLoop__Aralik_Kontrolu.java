@@ -7,6 +7,7 @@ public class C6__Lambdada_ForLoop__Aralik_Kontrolu {
 
     public static void main(String[] args) {
 
+
         ilk30(30);
         System.out.println();
         ilk30Dahil(30);
