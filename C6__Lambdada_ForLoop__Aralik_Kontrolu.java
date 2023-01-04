@@ -40,12 +40,14 @@ public class C6__Lambdada_ForLoop__Aralik_Kontrolu {
     //S2:  1 den 30 kadar olan sayilari (30 dahil ) 1 2 3 .... seklinde siralayalim (for loopsuz)
     //rangeClosed(int startInclusive, int endInclusive)
     public static void ilk30Dahil(int a) {
+
         IntStream.rangeClosed(1, a).
                 forEach(t -> System.out.print(t + " "));
     }
 
     //S3 Istenen iki deger(dahil) arasindaki sayilari toplayalim **rangeClosed(a,b)
     public static int top(int bas, int bitis) {
+
         return IntStream.rangeClosed(bas, bitis).sum();
         // return IntStream.rangeClosed(bas,bitis+1).sum();
     }
@@ -84,9 +86,9 @@ public class C6__Lambdada_ForLoop__Aralik_Kontrolu {
     //S9: pozitif tek sayilarin ilk 10 elemanin yazdiralim  *** IntSteram    limit(10)  filter ()  forEach()
 
     public static void ilk10(int a) {
-        //  IntStream.rangeClosed(1,a).limit(10).
-        //          filter(Methods::tekMi).forEach(Methods ::yazInteger);
-        //  //1-10 arasındaki tek sayiları verir.. YANLIS
+        // IntStream.rangeClosed(1,a).limit(10).
+        // filter(Methods::tekMi).forEach(Methods ::yazInteger);
+        // 1-10 arasındaki tek sayiları verir.. YANLIS
         IntStream.iterate(1, t -> t + 2).limit(10).
                 forEach(Methods_::yazInteger);
 
@@ -106,6 +108,7 @@ public class C6__Lambdada_ForLoop__Aralik_Kontrolu {
     }
 
 }
+
 //iterate bize sayilari istedigimiz sekilde yineletmeyi saglar yani buradaki ornekte 7ser7ser artmayi saglar
 //iterate icin bir baslangic degeri girilmeli ve artisin nasil olacagi belirtilmeli nerede biteceginide
 // limit() ile belirliyoruz
