@@ -3,7 +3,7 @@ package lambdaCodeChallenge;
 
 import java.util.OptionalDouble;
 import java.util.stream.IntStream;
-public class C6_Lambdada_ForLoop_Aralik_Kontrolu {
+public class C6__Lambdada_ForLoop_Aralik_Kontrolu {
 
     public static void main(String[] args) {
 
