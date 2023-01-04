@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class C5_Method_Referance__String {
+public class C5_Method__Referance__String {
 
 
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class C5_Method_Referance__String {
     public static void buyukYaz(List<String> l) {
         l.stream().map(t -> t.split("")).
                 flatMap(Arrays::stream).
-                map(String::toUpperCase).forEach(Methods::yazString);
+                map(String::toUpperCase).forEach(Methods_::yazString);
     }
 
     //S2: Stringleri uzunluklarina gore siralayip yaziniz
@@ -32,8 +32,8 @@ public class C5_Method_Referance__String {
 
     //S3: E ILE Baslayanlari yazdiralim
     public static void eIleBas(List<String>l){
-        l.stream().filter(Methods::EbasliyorMu).
-                forEach(Methods::yazString);
+        l.stream().filter(Methods_::EbasliyorMu).
+                forEach(Methods_::yazString);
     }
 
 }
